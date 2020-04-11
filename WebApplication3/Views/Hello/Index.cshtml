@@ -1,0 +1,98 @@
+<div style="margin: 5%">
+    <p class="title is-1 is-spaced">Laboratory Work 10</p>
+    <p class="subtitle is-3">Done by Bussakov Anvar</p>
+    <br/>
+    <form method="POST" style="margin-bottom: 80px">
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Name</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class ="input" type="text" id="firstName" placeholder="Your Name" name="name" />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Surname</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class ="input" type="text" id="lastName" placeholder="Your Surname" name="surname" />
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Day</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class ="input" type="number" name="day" placeholder="Day of your birth"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Month</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class ="input" type="number" name="month" placeholder="Mouth of your birth"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Year</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class ="input" type="number" name="year" placeholder="Year of your birth"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Group Number</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <p class="control">
+                        <input class ="input" id="group" type="number" placeholder="Enter your group number" name="group"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="field is-grouped"  style="float: right">
+            <p class="control">
+                <button class="button is-link" type="submit">
+                    Submit
+                </button>
+            </p>
+        </div>
+    </form>
+    
+    <div class="notification is-link">
+        Your ID: @ViewData["ID"]
+    </div>
+    
+    <div class="notification is-link">
+        Student: @ViewData["Data"]
+    </div>
+</div>
+
